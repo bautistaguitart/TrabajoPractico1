@@ -31,7 +31,19 @@ body{
 }
 
 .titulo{
+    border: 3px solid #444;
+    padding: 25px;
     grid-area: A;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d4e7ff;
+}
+
+.texto{
+    grid-area: A;
+    flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,29 +51,35 @@ body{
 
 .main{
     grid-area: B;
+    border: 3px solid #444;
+    padding: 25px;
 }
 
 .nav{
     grid-area: C;
+    border: 3px solid #444;
+    padding: 25px;
+    background-color: #d4e7ff;
 }
 
 .footer{
     grid-area: D;
-
+    background-color: #d4e7ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
     padding: 20px;
+    border: 3px solid #444;
+    padding: 25px;
 }
 
 .footer a{
     color: #444;
-    text-decoration: none;
     font-size: 25px;
+    
 }
 
 .footer a:hover{
-    text-decoration: underline;
     font-size: 25px;
 }
