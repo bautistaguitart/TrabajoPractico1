@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden State Warriors</title>
+    <title>InfoGuitart | Golden State Warriors</title>
     <link rel="stylesheet" href="css.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -15,44 +16,49 @@
 
         <header class="titulo">
             <h1>InfoGuitart</h1>
-            <img src="img/infoguitart.png" width="200" alt="Inf">]
+            <img src="img/infoguitart.png" width="200" alt="InfoGuitart">
         </header>
 
-        <nav class="nav">
+        <aside class="nav">
             <h2>Índice</h2>
-            <ul>
-                <li><a href="#quees">¿Qué es?</a></li>
-                <li><a href="#historia">Historia</a></li>
-                <li><a href="#trayectoria">Trayectoria</a></li>
-            </ul>
-        </nav>
+            <ul id="indice"></ul>
+
+            <div class="apariencia">
+                <h2>Apariencia</h2>
+                <button type="button" id="botonModo">Modo oscuro</button>
+                <p>Tamaño del texto</p>
+                <button type="button" class="botonTamano" data-tamano="pequeno">Pequeño</button>
+                <button type="button" class="botonTamano seleccionado" data-tamano="estandar">Estándar</button>
+                <button type="button" class="botonTamano" data-tamano="grande">Grande</button>
+            </div>
+        </aside>
 
         <main class="main">
             <div class="texto">
-            <h1>Golden State Warriors</h1>
-            <img src="img/imagen3.jpg" width="400" alt="Golden State Warriors">
+                <h1>Golden State Warriors</h1>
+                <img src="img/imagen3.jpg" width="400" alt="Golden State Warriors">
             </div>
-            <section id="quees">
-                <h3>¿Qué es?</h3>
 
+            <section>
+                <h2 id="quees">¿Qué es?</h2>
                 <p>
                     Los Golden State Warriors (en español: Guerreros del Estado Dorado) son un equipo profesional de
                     baloncesto de los Estados Unidos con sede en San Francisco, California. Compiten en la División
                     Pacífico de la Conferencia Oeste de la National Basketball Association (NBA) y disputan sus partidos
                     como locales en el Chase Center, ubicado en el barrio sanfranciscano de Mission Bay.
+                </p>
                 <p>
                     Los Warriors son una de las tres franquicias originales de la NBA que sobreviven en la
-                    actualidad,[Nota 1] y a lo largo de su historia han ganado un total de siete campeonatos de liga
+                    actualidad, y a lo largo de su historia han ganado un total de siete campeonatos de liga
                     (son el tercer equipo más laureado de la competición, únicamente por detrás de los Boston Celtics y
                     Los Angeles Lakers), siete títulos de Conferencia y doce títulos divisionales. Además, poseen el
                     mejor registro de todos los tiempos en una temporada regular (73-9 en la 2015-16) y en unos Playoffs
                     (16-1 en 2017).
                 </p>
-
             </section>
 
-            <section id="historia">
-                <h3 id="historia">Historia</h3>
+            <section>
+                <h2 id="historia">Historia</h2>
                 <p>
                     Los Warriors fueron fundados en Filadelfia, Pensilvania en 1946 como Philadelphia Warriors, miembro
                     de la BAA. El propietario era Pat Tyrrell, quien también poseía el equipo Philadelphia Ramblers de
@@ -66,27 +72,40 @@
                 </p>
             </section>
 
-            <section id="trayectoria">
-    <h3 id="trayectoria">Trayectoria</h3>
-    <p>
-        Los Golden State Warriors son una franquicia histórica de la NBA fundada en 1946 en Filadelfia, sumando 7 campeonatos totales (1947, 1956, 1975, 2015, 2017, 2018, 2022). Tras mudarse a California en 1962, se consolidaron como una dinastía moderna bajo la era de Stephen Curry y Steve Kerr, destacando por su récord de 73-9 en 2016 y su estilo de juego revolucionario.
-    </p>
-    </section>
+            <section>
+                <h2 id="trayectoria">Trayectoria</h2>
+                <p>
+                    Los Golden State Warriors son una franquicia histórica de la NBA fundada en 1946 en Filadelfia,
+                    sumando 7 campeonatos totales (1947, 1956, 1975, 2015, 2017, 2018, 2022). Tras mudarse a California
+                    en 1962, se consolidaron como una dinastía moderna bajo la era de Stephen Curry y Steve Kerr,
+                    destacando por su récord de 73-9 en 2016 y su estilo de juego revolucionario.
+                </p>
+            </section>
 
+            <section class="discusion">
+                <h2 id="discusion">Discusión</h2>
+                <form class="formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Escribí tu nombre">
+
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" maxlength="200" placeholder="Escribí un comentario"></textarea>
+
+                    <p id="contador">0 / 200</p>
+                    <button type="submit">Enviar comentario</button>
+                </form>
+                <p id="aviso"></p>
+                <ul id="comentarios"></ul>
+            </section>
         </main>
 
         <footer class="footer">
-
             <a href="tema2.html">Stephen Curry</a>
-
             <a href="index.html">Baloncesto</a>
-
             <a href="https://es.wikipedia.org/wiki/Baloncesto">Wikipedia</a>
-
         </footer>
 
     </div>
 
 </body>
-
 </html>

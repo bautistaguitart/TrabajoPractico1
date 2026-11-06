@@ -2,18 +2,13 @@ body {
     font-family: sans-serif;
     color: #444;
     background-color: #f2f2f2;
-}
-
-.main {
-    grid-area: B;
-    background-color: white;
-    padding: 25px;
+    margin: 8px;
 }
 
 .contenedor {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
         "A A"
         "C B"
@@ -21,20 +16,10 @@ body {
     gap: 5px;
 }
 
-.contenedor-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: black;
-}
-
 .titulo {
     border: 3px solid #444;
     padding: 25px;
     grid-area: A;
-    flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,17 +27,32 @@ body {
 }
 
 .texto {
-    grid-area: A;
-    flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
+}
+
+.texto img {
+    max-width: 45%;
+    height: auto;
 }
 
 .main {
     grid-area: B;
+    background-color: white;
     border: 3px solid #444;
     padding: 25px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.main h2 {
+    font-size: 1.5em;
+}
+
+.main h3 {
+    font-size: 1.2em;
 }
 
 .nav {
@@ -62,6 +62,33 @@ body {
     background-color: #d4e7ff;
 }
 
+.nav ul {
+    padding-left: 22px;
+}
+
+.nav a {
+    color: #444;
+}
+
+.apariencia {
+    margin-top: 30px;
+    border-top: 1px solid #888;
+    padding-top: 10px;
+}
+
+button {
+    padding: 7px 10px;
+    margin: 3px 2px;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+.seleccionado {
+    background-color: #444;
+    color: white;
+}
+
 .footer {
     grid-area: D;
     background-color: #d4e7ff;
@@ -69,7 +96,6 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 17px;
-    padding: 20px;
     border: 3px solid #444;
     padding: 25px;
 }
@@ -77,9 +103,143 @@ body {
 .footer a {
     color: #444;
     font-size: 20px;
-
 }
 
 .footer a:hover {
     font-size: 21px;
+}
+
+section {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+section h2 {
+    cursor: pointer;
+}
+
+.flecha {
+    margin-right: 8px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 8px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.formulario textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+#contador {
+    margin: 0;
+}
+
+#aviso {
+    font-weight: bold;
+}
+
+.error {
+    border: 2px solid red !important;
+    background-color: #ffe5e5;
+}
+
+.comentario-item {
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.comentario-item button {
+    display: block;
+    margin-top: 8px;
+}
+
+.texto-pequeno {
+    font-size: 13px;
+}
+
+.texto-estandar {
+    font-size: 16px;
+}
+
+.texto-grande {
+    font-size: 20px;
+}
+
+.modo-oscuro {
+    background-color: #202124;
+    color: #eeeeee;
+}
+
+.modo-oscuro .titulo,
+.modo-oscuro .nav,
+.modo-oscuro .footer {
+    background-color: #30343b;
+    border-color: #777;
+}
+
+.modo-oscuro .main {
+    background-color: #25282d;
+    border-color: #777;
+}
+
+.modo-oscuro .nav a,
+.modo-oscuro .footer a {
+    color: #eeeeee;
+}
+
+.modo-oscuro section {
+    border-color: #555;
+}
+
+.modo-oscuro .seleccionado {
+    background-color: #eeeeee;
+    color: #222;
+}
+
+.modo-oscuro .comentario-item {
+    border-color: #777;
+}
+
+.modo-oscuro .error {
+    background-color: #632d2d;
+}
+
+@media (max-width: 700px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "A"
+            "C"
+            "B"
+            "D";
+    }
+
+    .titulo,
+    .texto,
+    .footer {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .texto img {
+        max-width: 100%;
+    }
+
+    .footer {
+        justify-content: center;
+    }
 }

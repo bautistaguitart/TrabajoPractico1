@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephen Curry</title>
+    <title>InfoGuitart | Stephen Curry</title>
     <link rel="stylesheet" href="css.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -18,112 +19,112 @@
             <img src="img/infoguitart.png" width="200" alt="InfoGuitart">
         </header>
 
-        <nav class="nav">
+        <aside class="nav">
             <h2>Índice</h2>
-            <ul>
-                <li><a href="#quienes">¿Quién es?</a></li>
-                <li><a href="#biografia">Biografía</a></li>
-                <li><a href="#trayectoria">Trayectoria Deportiva</a></li>
-                <ul>
-                    <li><a href="#inicios">Inicios</a></li>
+            <ul id="indice"></ul>
 
-                    <li><a href="#premios">Premios</a></li>
-                </ul>
-            </ul>
-        </nav>
+            <div class="apariencia">
+                <h2>Apariencia</h2>
+                <button type="button" id="botonModo">Modo oscuro</button>
+                <p>Tamaño del texto</p>
+                <button type="button" class="botonTamano" data-tamano="pequeno">Pequeño</button>
+                <button type="button" class="botonTamano seleccionado" data-tamano="estandar">Estándar</button>
+                <button type="button" class="botonTamano" data-tamano="grande">Grande</button>
+            </div>
+        </aside>
 
         <main class="main">
             <div class="texto">
-            <h1>Stephen Curry</h1>
-            <img src="img/imagen1.jpg" width="200" alt="Curry">
+                <h1>Stephen Curry</h1>
+                <img src="img/imagen1.jpg" width="200" alt="Stephen Curry">
             </div>
-            <section id="quees">
-                <h3 id="quienes">¿Quién es?</h3>
+
+            <section>
+                <h2 id="quienes">¿Quién es?</h2>
                 <p>
                     Wardell Stephen Curry II (Akron, Ohio, 14 de marzo de 1988) es un jugador de baloncesto
                     estadounidense que pertenece a la plantilla de los Golden State Warriors de la NBA. Con 1,88 metros
-                    de altura, juega en la posición de base.[4
+                    de altura, juega en la posición de base.
                 </p>
                 <p>
-                    Hijo del exjugador de la NBA Dell Curry[5] y hermano mayor del también jugador Seth Curry,[6] jugó a
+                    Hijo del exjugador de la NBA Dell Curry y hermano mayor del también jugador Seth Curry, jugó a
                     nivel universitario tres años en Davidson y fue elegido por los Warriors en la séptima posición del
                     Draft de la NBA de 2009. A lo largo de su carrera ha sido cuatro veces campeón de la NBA, dos veces
                     MVP de la temporada regular y una vez MVP de las Finales, además de conseguir dos Copas del Mundo y
-                    un oro olímpico con la selección estadounidense. Es considerado como el mejor tirador de la historia
-                    del baloncesto y es el líder histórico de la NBA en triples anotados.[7][8
+                    un oro olímpico con la selección estadounidense. Es considerado como uno de los mejores tiradores
+                    de la historia del baloncesto y es el líder histórico de la NBA en triples anotados.
                 </p>
             </section>
 
-            <section id="biografia">
-                <h3 id="biografia">Biografía</h3>
+            <section>
+                <h2 id="biografia">Biografía</h2>
                 <p>
                     Nació el 14 de marzo de 1988 en el Hospital Summa de la ciudad de Akron, Ohio, en la misma planta en
                     la que nació LeBron James 39 meses antes, mientras su padre pertenecía en aquel momento a la
-                    plantilla de los Cleveland Cavaliers.[9][10] Creció en Charlotte, Carolina del Norte, donde su padre
-                    pasó la mayor parte de su carrera jugando con los Charlotte Hornets.[11] Dell a menudo llevaba a
-                    Curry y a su hermano menor Seth a sus partidos, donde tiraban a canasta con los Hornets durante los
-                    calentamientos.[12] La familia se mudó brevemente a Toronto, donde Dell terminó su carrera como
-                    miembro de los Toronto Raptors.[11
+                    plantilla de los Cleveland Cavaliers. Creció en Charlotte, Carolina del Norte, donde su padre
+                    pasó la mayor parte de su carrera jugando con los Charlotte Hornets. Dell a menudo llevaba a
+                    Curry y a su hermano menor Seth a sus partidos, donde tiraban a canasta con los Hornets durante
+                    los calentamientos. La familia se mudó brevemente a Toronto, donde Dell terminó su carrera como
+                    miembro de los Toronto Raptors.
                 </p>
                 <p>
                     Después de la retirada de Dell, la familia se mudó de regreso a Charlotte, y Curry fue inscrito en
                     el Charlotte Christian School, donde fue incluido en el mejor quinteto de la conferencia y del
                     estado, y llevó a su equipo a tres títulos de conferencia y tres apariciones en playoffs estatales.
                     Debido a la carrera histórica de su padre en Virginia Tech, Curry quería jugar baloncesto
-                    universitario para los Hokies, pero solo se le ofreció una plaza sin posibilidad de beca debido, en
-                    parte, a su complexión de tan solo 72 kilos. Finalmente, eligió asistir al Davidson College, que lo
-                    venía siguiendo desde décimo grado.[13
+                    universitario para los Hokies, pero finalmente eligió asistir al Davidson College.
                 </p>
-
             </section>
 
-            <section id="trayectoria">
-                <h3 id="trayectoria">Trayectoria Deportiva</h3>
+            <section>
+                <h2 id="trayectoria">Trayectoria Deportiva</h2>
+                <h3 id="inicios">Inicios</h3>
+                <p>
+                    Jugó durante tres temporadas para los Wildcats del Davidson College, en las que promedió 25,3
+                    puntos, 4,5 rebotes y 3,7 asistencias por partido. No tardó en demostrar sus cualidades, ya
+                    que en su segundo partido oficial, ante Michigan Wolverines consiguió 32 puntos, 9 rebotes y 4
+                    asistencias. Acabó la temporada liderando a la Southern Conference en anotación, con 21,5
+                    puntos por partido, siendo el segundo mejor anotador novato de todo el país tras el jugador
+                    de Texas, Kevin Durant.
+                </p>
+                <p>
+                    En su segunda temporada volvió a liderar en anotación en su conferencia, al promediar 25,9
+                    puntos por partido, a lo que añadió 4,6 rebotes, 2,9 asistencias y 2,0 robos de balón. Acabó
+                    siendo elegido en el segundo quinteto del All-American. También batió el récord de más triples
+                    anotados por un jugador de la NCAA en una temporada, con 162.
+                </p>
+                <h3 id="premios">Premios</h3>
                 <ul>
-                    <h4 id="inicios">Inicios</h4>
-                    <p>
-                        Jugó durante tres temporadas para los Wildcats del Davidson College, en las que promedió 25,3
-                        puntos, 4,5 rebotes y 3,7 asistencias por partido.[14] No tardó en demostrar sus cualidades, ya
-                        que en su segundo partido oficial, ante Michigan Wolverines consiguió 32 puntos, 9 rebotes y 4
-                        asistencias.[15] Acabó la temporada liderando a la Southern Conference en anotación, con 21,5
-                        puntos por partido,[5] siendo el segundo mejor anotador novato de todo el país tras el jugador
-                        de Texas, Kevin Durant, que acabaría siendo elegido en la segunda posición del draft del 2007.
-                    </p>
-                    <p>
-                        En su segunda temporada volvió a liderar en anotación en su conferencia, al promediar 25,9
-                        puntos por partido, a lo que añadió 4,6 rebotes, 2,9 asistencias y 2,0 robos de balón.[5] Acabó
-                        siendo elegido en el segundo quinteto del All-American,[16] además de ser finalista al John R.
-                        Wooden Award. También batió el récord de más triples anotados por un jugador de la NCAA en una
-                        temporada, con 162.[5
-                    </p>
-                    <h4 id="premios">Premios</h4>
-                    <p>
-                        x4 veces Campeón de la NBA (2015, 2017, 2018, 2022).
-                    </p>
-                    <p>
-                        x1 medalla de Oro Olímpica (París 2024).
-                    </p>
-                    <p>
-                        x2 medallas de Oro en Copas del Mundo FIBA (2010, 2014).
-                    </p>
-
+                    <li>4 veces campeón de la NBA (2015, 2017, 2018, 2022).</li>
+                    <li>1 medalla de oro olímpica (París 2024).</li>
+                    <li>2 medallas de oro en Copas del Mundo FIBA (2010, 2014).</li>
                 </ul>
             </section>
 
+            <section class="discusion">
+                <h2 id="discusion">Discusión</h2>
+                <form class="formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Escribí tu nombre">
+
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" maxlength="200" placeholder="Escribí un comentario"></textarea>
+
+                    <p id="contador">0 / 200</p>
+                    <button type="submit">Enviar comentario</button>
+                </form>
+                <p id="aviso"></p>
+                <ul id="comentarios"></ul>
+            </section>
         </main>
 
         <footer class="footer">
-
             <a href="index.html">Baloncesto</a>
-
             <a href="tema3.html">Golden State Warriors</a>
-
             <a href="https://es.wikipedia.org/wiki/Baloncesto">Wikipedia</a>
-
         </footer>
 
     </div>
 
 </body>
-
 </html>
