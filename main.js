@@ -60,7 +60,11 @@ secciones.forEach(function(seccion) {
 
         for (let i = 0; i < contenido.length; i++) {
             if (contenido[i] !== titulo) {
-                contenido[i].hidden = estaAbierta;
+                if (estaAbierta) {
+                    contenido[i].classList.add("oculto");
+                } else {
+                    contenido[i].classList.remove("oculto");
+                }
             }
         }
 

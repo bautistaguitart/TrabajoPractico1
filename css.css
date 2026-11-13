@@ -150,6 +150,11 @@ section h2 {
     font-weight: bold;
 }
 
+#comentarios {
+    list-style: none;
+    padding-left: 0;
+}
+
 .error {
     border: 2px solid red !important;
     background-color: #ffe5e5;
@@ -205,17 +210,13 @@ section h2 {
     border-color: #555;
 }
 
-.modo-oscuro .seleccionado {
-    background-color: #eeeeee;
-    color: #222;
-}
-
 .modo-oscuro .comentario-item {
     border-color: #777;
 }
 
 .modo-oscuro .error {
     background-color: #632d2d;
+    color: #eeeeee;
 }
 
 @media (max-width: 700px) {
@@ -242,4 +243,8 @@ section h2 {
     .footer {
         justify-content: center;
     }
+}
+
+.oculto {
+    display: none;
 }
